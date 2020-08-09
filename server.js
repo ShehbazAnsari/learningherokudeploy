@@ -18,5 +18,5 @@ app.get('/group', (req, res) => {
 })
 
 
-const PORT = 5000
-app.listen(PORT, () => `PORT is succesfully running on ${PORT}`)
+const port = process.env.PORT || 5000
+app.listen(port, () => `PORT is succesfully running on ${port}`)
