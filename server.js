@@ -8,7 +8,7 @@ const groupJson = {
   Shamuwel:"TPO Developer",
   "Bilal":"Rpa Developer"
 }
-
+app.use(express.json())
 app.get('/' ,(req,res)=>{
   res.send('<h1>First Heroku Deployment</h1>')
 })
