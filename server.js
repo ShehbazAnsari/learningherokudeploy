@@ -17,6 +17,9 @@ app.get('/group', (req, res) => {
   res.json(groupJson)
 })
 
+app.get('/newfeature', (req,res)=>{
+  res.send('Heroku is awesome')
+})
 
 const port = process.env.PORT || 5000
 app.listen(port, () => `PORT is succesfully running on ${port}`)
